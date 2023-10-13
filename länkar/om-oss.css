@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   display: block;
   margin: 0;
@@ -51,18 +52,25 @@ body {
   top: 15px;
 }
 
+.om-oss-title {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
 .main-container {
   box-sizing: border-box;
   padding: 5% 10%;
   display: flex;
   -moz-column-gap: 10em;
        column-gap: 10em;
-  margin-top: 10em;
+  margin-top: 7em;
   justify-content: center;
   margin-bottom: 10em;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 1px solid black;
+  border: 1px solid rgb(227, 227, 227);
 }
 .main-container .om-oss {
   display: flex;
@@ -148,10 +156,14 @@ body {
 .kontakt-container .kontakt-form button {
   padding: 10px 0;
   outline: none;
-  background-color: transparent;
+  background-color: black;
+  color: white;
   width: 100%;
   cursor: pointer;
   border-radius: 4px;
+}
+.kontakt-container .kontakt-form button i {
+  color: white;
 }
 
 footer {
@@ -201,13 +213,20 @@ footer {
 }
 .footer-container .footer-media {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.footer-container .footer-media div {
+.footer-container .footer-media .följ-oss {
+  font-size: 20px;
+}
+.footer-container .footer-media .media {
+  display: flex;
   font-size: 1.5em;
   margin: 10px;
-  margin-top: 3rem;
+  gap: 10px;
 }
-.footer-container .footer-media div a {
+.footer-container .footer-media .media a {
   color: black;
 }
 

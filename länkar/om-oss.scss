@@ -1,6 +1,7 @@
 $font-stack: sans-serif;
 $primary-color: rgb(216, 50, 50);
-
+$button-color: black;
+$button-text-color:white;
 
 
   
@@ -89,6 +90,12 @@ body {
 
 
 //main//
+.om-oss-title {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
 
 .main-container {
     
@@ -97,12 +104,12 @@ body {
   
     display: flex;
     column-gap: 10em;
-    margin-top: 10em;
+    margin-top: 7em;
     justify-content: center;
     margin-bottom: 10em;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid black;
+    border: 1px solid rgb(227, 227, 227);
     
     .om-oss {
         display: flex;
@@ -213,10 +220,15 @@ body {
         button {
             padding: 10px 0; 
             outline: none;
-            background-color: transparent;
+            background-color: $button-color;
+            color: $button-text-color;
             width: 100%;
             cursor: pointer;
             border-radius: 4px;
+
+            i {
+                color: $button-text-color;
+            }
         }
         
     }
@@ -284,16 +296,26 @@ footer {
 
     .footer-media {
         display: flex;
-        
-        div {
+        flex-direction: column;   
+        justify-content: center;
+        align-items: center;
+
+        .följ-oss {
+            
+            font-size: 20px;
+        }
+        .media {
+            display: flex;
             font-size: 1.5em;
             margin: 10px;
-            margin-top: 3rem;
+            gap: 10px;
+            
             
             a {
                 color: black;
             }
         }
+        
     }
 }
 

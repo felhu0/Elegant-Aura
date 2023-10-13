@@ -1,6 +1,7 @@
 $font-stack: arial;
 $primary-color: rgb(216, 50, 50);
-
+$button-color: black;
+$button-text-color:white;
 
 
   
@@ -149,7 +150,8 @@ body {
 
         .köp {
             width: 250px;
-            background-color: transparent;
+            background-color: $button-color;
+            color: $button-text-color;
             border-radius: 15px;
             height: 25px;
         }
@@ -160,78 +162,86 @@ body {
 //footer//
 footer {
     background-color: rgb(247, 210, 238);
+}
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
 
-    .footer-container {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        
-    
-        .footer-elegant-aura {
-            font-size: 20px;
-    
-            ul {
-                list-style: none;
-                margin-top: 3rem;
-    
-                a {
-                    text-decoration: none;
-                    color: black;
-    
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                    
-                    li {
-                        font-size: 16px;
-                        margin-top: 5px;
-                    }
+    .footer-elegant-aura {
+        font-size: 20px;
+
+        ul {
+            list-style: none;
+            margin-top: 3rem;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    text-decoration: underline;
                 }
-            }
-            
-        }
-    
-        .footer-kundservice {
-            font-size: 20px;
-            
-            
-            ul {
-                list-style: none;
-                margin-top: 3rem;
-    
-                a {
-                    text-decoration: none;
-                    color: black;
-    
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                    
-                    li {
-                        font-size: 16px;
-                        margin-top: 5px;
-                    }
-                }
-            }
-    
-        }
-    
-        .footer-media {
-            display: flex;
-            
-            div {
-                font-size: 1.5em;
-                margin: 10px;
-                margin-top: 3rem;
                 
-                a {
-                    color: black;
+                li {
+                    font-size: 16px;
+                    margin-top: 5px;
                 }
             }
         }
-    
+        
     }
-    
+
+    .footer-kundservice {
+        font-size: 20px;
+        
+        
+        ul {
+            list-style: none;
+            margin-top: 3rem;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+                
+                li {
+                    font-size: 16px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+    }
+
+    .footer-media {
+        display: flex;
+        flex-direction: column;   
+        justify-content: center;
+        align-items: center;
+
+        .följ-oss {
+            
+            font-size: 20px;
+        }
+        .media {
+            display: flex;
+            font-size: 1.5em;
+            margin: 10px;
+            gap: 10px;
+            
+            
+            a {
+                color: black;
+            }
+        }
+        
+    }
+
 }
 
 //footer-bottom kontakt//

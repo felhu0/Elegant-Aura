@@ -1,6 +1,7 @@
 $font-stack: sans-serif;
 $primary-color: rgb(216, 50, 50);
-
+$button-color: black;
+$button-text-color:white;
 
 
   
@@ -197,16 +198,26 @@ footer {
 
     .footer-media {
         display: flex;
-        
-        div {
+        flex-direction: column;   
+        justify-content: center;
+        align-items: center;
+
+        .följ-oss {
+            
+            font-size: 20px;
+        }
+        .media {
+            display: flex;
             font-size: 1.5em;
             margin: 10px;
-            margin-top: 3rem;
+            gap: 10px;
+            
             
             a {
                 color: black;
             }
         }
+        
     }
 
 }

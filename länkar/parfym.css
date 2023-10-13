@@ -149,13 +149,20 @@ footer {
 }
 .footer-container .footer-media {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.footer-container .footer-media div {
+.footer-container .footer-media .följ-oss {
+  font-size: 20px;
+}
+.footer-container .footer-media .media {
+  display: flex;
   font-size: 1.5em;
   margin: 10px;
-  margin-top: 3rem;
+  gap: 10px;
 }
-.footer-container .footer-media div a {
+.footer-container .footer-media .media a {
   color: black;
 }
 

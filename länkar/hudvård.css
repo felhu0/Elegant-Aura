@@ -113,7 +113,8 @@ body {
 .main-container .hårvård .köp,
 .main-container .parfym .köp {
   width: 250px;
-  background-color: transparent;
+  background-color: black;
+  color: white;
   border-radius: 15px;
   height: 25px;
 }
@@ -121,56 +122,64 @@ body {
 footer {
   background-color: rgb(247, 210, 238);
 }
-footer .footer-container {
+
+.footer-container {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
 }
-footer .footer-container .footer-elegant-aura {
+.footer-container .footer-elegant-aura {
   font-size: 20px;
 }
-footer .footer-container .footer-elegant-aura ul {
+.footer-container .footer-elegant-aura ul {
   list-style: none;
   margin-top: 3rem;
 }
-footer .footer-container .footer-elegant-aura ul a {
+.footer-container .footer-elegant-aura ul a {
   text-decoration: none;
   color: black;
 }
-footer .footer-container .footer-elegant-aura ul a:hover {
+.footer-container .footer-elegant-aura ul a:hover {
   text-decoration: underline;
 }
-footer .footer-container .footer-elegant-aura ul a li {
+.footer-container .footer-elegant-aura ul a li {
   font-size: 16px;
   margin-top: 5px;
 }
-footer .footer-container .footer-kundservice {
+.footer-container .footer-kundservice {
   font-size: 20px;
 }
-footer .footer-container .footer-kundservice ul {
+.footer-container .footer-kundservice ul {
   list-style: none;
   margin-top: 3rem;
 }
-footer .footer-container .footer-kundservice ul a {
+.footer-container .footer-kundservice ul a {
   text-decoration: none;
   color: black;
 }
-footer .footer-container .footer-kundservice ul a:hover {
+.footer-container .footer-kundservice ul a:hover {
   text-decoration: underline;
 }
-footer .footer-container .footer-kundservice ul a li {
+.footer-container .footer-kundservice ul a li {
   font-size: 16px;
   margin-top: 5px;
 }
-footer .footer-container .footer-media {
+.footer-container .footer-media {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-footer .footer-container .footer-media div {
+.footer-container .footer-media .följ-oss {
+  font-size: 20px;
+}
+.footer-container .footer-media .media {
+  display: flex;
   font-size: 1.5em;
   margin: 10px;
-  margin-top: 3rem;
+  gap: 10px;
 }
-footer .footer-container .footer-media div a {
+.footer-container .footer-media .media a {
   color: black;
 }
 
