@@ -65,9 +65,10 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
-  -moz-column-gap: 5em;
-       column-gap: 5em;
+  -moz-column-gap: 8em;
+       column-gap: 8em;
   margin-bottom: 5em;
+  justify-content: center;
 }
 .main-container .hudvård,
 .main-container .hårvård,
@@ -75,7 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(255, 255, 255);
-  width: 25%;
+  align-items: center;
 }
 .main-container .hudvård img,
 .main-container .hårvård img,
@@ -89,17 +90,34 @@ body {
 .main-container .parfym img:hover {
   transform: scale(1.2);
 }
-.main-container .hudvård h1,
-.main-container .hudvård h2,
+.main-container .hudvård a,
+.main-container .hårvård a,
+.main-container .parfym a {
+  text-decoration: none;
+  color: black;
+}
+.main-container .hudvård p,
 .main-container .hudvård h3,
-.main-container .hårvård h1,
-.main-container .hårvård h2,
+.main-container .hårvård p,
 .main-container .hårvård h3,
-.main-container .parfym h1,
-.main-container .parfym h2,
+.main-container .parfym p,
 .main-container .parfym h3 {
   font-family: sans-serif;
   text-align: center;
+}
+.main-container .hudvård .köp,
+.main-container .hårvård .köp,
+.main-container .parfym .köp {
+  width: 250px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  height: 25px;
+}
+.main-container .hudvård .köp:hover,
+.main-container .hårvård .köp:hover,
+.main-container .parfym .köp:hover {
+  opacity: 0.7;
 }
 
 footer {

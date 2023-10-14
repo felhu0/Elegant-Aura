@@ -100,15 +100,14 @@ body {
 
 //main//
 
-
-
 .main-container {
     box-sizing: border-box;
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
-    column-gap: 5em;
+    column-gap: 8em;
     margin-bottom: 5em;
+    justify-content: center;
 
     .hudvård,
     .hårvård,
@@ -116,9 +115,10 @@ body {
         display: flex;
         flex-direction: column;
         border: 1px solid rgb(255, 255, 255);
-        width: 25%;
-
+        align-items: center;
+        
         img {
+            
             width: 250px;
             margin-bottom: 4em;
             transition: transform .20s;
@@ -128,12 +128,30 @@ body {
                 transform: scale(1.2);
             }
         }
-        h1,
-        h2,
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p,
         h3 {
             font-family: $font-stack;
             text-align: center;
         }
+
+        .köp {
+            width: 250px;
+            background-color: $button-color;
+            color: $button-text-color;
+            border-radius: 15px;
+            height: 25px;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
     }
 }
 

@@ -11,6 +11,7 @@ body {
   background-color: rgb(247, 210, 238);
   margin-top: 0;
   padding-top: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .containders {
@@ -71,7 +72,7 @@ body {
   margin-bottom: 6em;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3em;
+  gap: 4em;
 }
 .main-container .hudvård,
 .main-container .hårvård,
@@ -81,10 +82,9 @@ body {
 .main-container .rea {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(211, 211, 211);
   width: 400px;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: black;
-  margin-bottom: 0;
 }
 .main-container .hudvård a,
 .main-container .hårvård a,
@@ -136,6 +136,7 @@ body {
 
 footer {
   background-color: rgb(247, 210, 238);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer-container {
