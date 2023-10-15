@@ -118,6 +118,11 @@ body {
   border-radius: 15px;
   height: 25px;
 }
+.main-container .hudvård .köp:hover,
+.main-container .hårvård .köp:hover,
+.main-container .parfym .köp:hover {
+  opacity: 0.7;
+}
 
 footer {
   background-color: rgb(247, 210, 238);
@@ -182,6 +187,9 @@ footer {
 .footer-container .footer-media .media a {
   color: black;
 }
+.footer-container .footer-media .media a:hover {
+  opacity: 0.7;
+}
 
 .footer-kontakt-container {
   display: flex;
@@ -210,6 +218,10 @@ footer {
   margin-bottom: 0px;
   color: black;
   text-decoration: none;
+}
+.footer-kontakt-container .contact p a:hover {
+  text-decoration: underline;
+  color: blue;
 }
 .footer-kontakt-container .bottom-contact {
   display: flex;

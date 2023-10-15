@@ -246,6 +246,10 @@ footer {
             
             a {
                 color: black;
+
+                &:hover {
+                    opacity: 0.7;
+                }
             }
         }
         
@@ -281,6 +285,11 @@ footer {
                 margin-bottom: 0px;
                 color: black;
                 text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: blue;
+                }
             }
         }
     }

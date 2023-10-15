@@ -64,7 +64,8 @@ body {
   padding: 5% 10%;
   display: flex;
   flex-direction: column;
-  column-gap: 10em;
+  -moz-column-gap: 10em;
+       column-gap: 10em;
   margin-top: 7em;
   justify-content: center;
   margin-bottom: 10em;
@@ -82,6 +83,14 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 500px;
+}
+.main-container .om-oss .om-oss-text a {
+  text-decoration: none;
+  color: black;
+}
+.main-container .om-oss .om-oss-text a:hover {
+  text-decoration: underline;
+  color: blue;
 }
 .main-container .om-oss .skincare-img {
   width: 500px;
@@ -111,13 +120,13 @@ body {
   justify-content: center;
   width: 500px;
 }
-.main-container .vd .vd-text .vd-tel:hover, .main-container .vd .vd-text .vd-mail:hover {
-  text-decoration: underline;
-  color: pink;
-}
-.main-container .vd .vd-text .vd-tel a, .main-container .vd .vd-text .vd-mail a {
+.main-container .vd .vd-text a {
   text-decoration: none;
   color: black;
+}
+.main-container .vd .vd-text a:hover {
+  text-decoration: underline;
+  color: blue;
 }
 .main-container .team {
   display: flex;
@@ -138,7 +147,8 @@ body {
   width: 600px;
   height: 600px;
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .kontakt-container {
@@ -176,11 +186,10 @@ body {
   background-color: black;
   color: white;
   width: 100%;
-  cursor: pointer;
   border-radius: 4px;
 }
-.kontakt-container .kontakt-form button i {
-  color: white;
+.kontakt-container .kontakt-form button:hover {
+  opacity: 0.7;
 }
 
 footer {
@@ -246,6 +255,9 @@ footer {
 .footer-container .footer-media .media a {
   color: black;
 }
+.footer-container .footer-media .media a:hover {
+  opacity: 0.7;
+}
 
 .footer-kontakt-container {
   display: flex;
@@ -275,6 +287,10 @@ footer {
   color: black;
   text-decoration: none;
 }
+.footer-kontakt-container .contact p a:hover {
+  text-decoration: underline;
+  color: blue;
+}
 .footer-kontakt-container .bottom-contact {
   display: flex;
   flex-direction: row;
@@ -291,6 +307,4 @@ footer {
 }
 .footer-kontakt-container .bottom-contact span .far {
   font-weight: 400;
-}
-
-/*# sourceMappingURL=om-oss.css.map */
+}/*# sourceMappingURL=om-oss.css.map */
