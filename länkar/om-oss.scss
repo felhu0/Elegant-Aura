@@ -31,7 +31,9 @@ body {
 .containders {
     
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
     background-color: rgb(255, 255, 255);
     align-items: center;
     
@@ -357,6 +359,8 @@ footer {
         .följ-oss {
             
             font-size: 20px;
+
+           
         }
         .media {
             display: flex;

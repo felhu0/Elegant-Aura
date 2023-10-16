@@ -15,7 +15,9 @@ body {
 
 .containders {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
   background-color: rgb(255, 255, 255);
   align-items: center;
 }
@@ -69,10 +71,10 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
-  -moz-column-gap: 8em;
-       column-gap: 8em;
-  margin-bottom: 5em;
+  gap: 10em;
+  margin-bottom: 8em;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .main-container .hudvård,
 .main-container .hårvård,
@@ -81,6 +83,7 @@ body {
   flex-direction: column;
   border: 1px solid rgb(255, 255, 255);
   align-items: center;
+  width: 250px;
 }
 .main-container .hudvård img,
 .main-container .hårvård img,
