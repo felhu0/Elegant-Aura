@@ -2,7 +2,13 @@ $font-stack: sans-serif;
 $primary-color: rgb(216, 50, 50);
 $button-color: black;
 $button-text-color:white;
-
+$breakpoints: (
+"sm": 640px,
+"md": 768px,
+"lg": 1024px,
+"xl": 1280px,
+"2xl": 1536px,
+);
 
   
 body {
@@ -107,14 +113,16 @@ body {
     justify-content: center;
     margin-bottom: 10em;
     border: 1px solid rgb(227, 227, 227);
-    gap: 4em;
+    gap: 5em;
 
     .om-oss {
         display: flex;
         flex-direction: row;
         justify-items: center;
         justify-content: space-around;
-        
+        flex-wrap: wrap;
+        border-bottom: 1px solid rgb(227, 227, 227);
+        margin-bottom: 10em;
         .om-oss-text {
             display: flex;
             flex-direction: column;
@@ -138,8 +146,8 @@ body {
             width: 500px;
 
             img {
-                width: 600px;
-                height: 600px;
+                width: 500px;
+                height: 500px;
                 border-radius: 20px;
             }
         }
@@ -149,16 +157,18 @@ body {
 
     .vd {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
+        border-bottom: 1px solid rgb(227, 227, 227);
 
         .profil-img {
             width:500px;
             
             img {
-                width: 600px;
-                height: 600px;
+                width: 500px;
+                height: 500px;
                 border-radius: 20px;
                 
             }
@@ -170,7 +180,7 @@ body {
              flex-direction: column;
              justify-content: center;
              width: 500px;
-            
+             
              a {
                 text-decoration: none;
                     color: black;
@@ -196,6 +206,7 @@ body {
         flex-direction: row;
         justify-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
         
         .team-text {
             display: flex;
@@ -208,8 +219,8 @@ body {
             width: 500px;
 
             img {
-                width: 600px;
-                height: 600px;
+                width: 500px;
+                height: 500px;
                 border-radius: 20px;
                 object-fit: cover
             }
@@ -426,3 +437,8 @@ footer {
         }
     }
 }
+
+
+//@media//
+
+

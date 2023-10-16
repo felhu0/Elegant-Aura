@@ -70,13 +70,16 @@ body {
   justify-content: center;
   margin-bottom: 10em;
   border: 1px solid rgb(227, 227, 227);
-  gap: 4em;
+  gap: 5em;
 }
 .main-container .om-oss {
   display: flex;
   flex-direction: row;
   justify-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  margin-bottom: 10em;
 }
 .main-container .om-oss .om-oss-text {
   display: flex;
@@ -96,22 +99,24 @@ body {
   width: 500px;
 }
 .main-container .om-oss .skincare-img img {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   border-radius: 20px;
 }
 .main-container .vd {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(227, 227, 227);
 }
 .main-container .vd .profil-img {
   width: 500px;
 }
 .main-container .vd .profil-img img {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   border-radius: 20px;
 }
 .main-container .vd .vd-text {
@@ -133,6 +138,7 @@ body {
   flex-direction: row;
   justify-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .main-container .team .team-text {
   display: flex;
@@ -144,8 +150,8 @@ body {
   width: 500px;
 }
 .main-container .team .team-img img {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
