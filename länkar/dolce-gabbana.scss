@@ -14,12 +14,19 @@ body {
 
 
 //header//
+header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    box-shadow: 0 1px 2px 0 rgba(0, 0.2, 0.1, 0.1), 0 1px 2px 0 rgba(0, 0.2, 0.2, 0.1);
+}
 .header-top {
     width: 100%;
     height: 40px;
     background-color: rgb(247, 210, 238);
     margin-top: 0;
     padding-top: 0;
+    
 }
 
 .containders {
@@ -45,12 +52,17 @@ body {
             a {
                 text-decoration: none;
                 li {
-                
-                    border: 1px solid black;
+                    font-size: 18px;
                     padding: 1em;
                     margin: 1em;
                     align-items: center;
-                    
+                    transition: transform .20s;
+                    &:hover {
+                        opacity: 0.7;
+                        color: white;
+                        background-color: rgb(247, 210, 238);
+                        transform: scale(1.2);
+                    }
                 }
             }
             
@@ -81,6 +93,11 @@ body {
                     left: 19em;
                     z-index: 1;
                     top: 15px;
+                    transition: transform .20s;
+                    
+                    &:hover {
+                        transform: scale(1.2);
+                    }
         
                 }
             }
@@ -96,7 +113,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 10em;
+    margin-top: 15em;
     margin-bottom: 10em;
     gap: 10em;
 
@@ -145,6 +162,7 @@ body {
 //footer//
 footer {
     background-color: rgb(247, 210, 238);
+    
 }
 .footer-container {
     display: flex;
@@ -290,4 +308,10 @@ footer {
             }
         }
     }
+}
+
+//media queries //
+
+@media (max-width: 1810px) {
+    
 }
