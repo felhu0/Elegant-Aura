@@ -152,17 +152,22 @@ header {
     margin-top: 15em;
     margin-bottom: 7em;
     box-sizing: border-box;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     object-fit: cover;
 
     @media (max-width: 1042px) {
         margin-top: 20em;
-       
+
     }
-    @media (max-width: 742px) {
-        margin-top: 21em;
+    
+    img {
+        @media (max-width: 1042px) {
+            width: 100%;
+            height: auto;
+        }
     }
+
 }
 
 

@@ -10,6 +10,7 @@ header {
   top: 0;
   position: fixed;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .header-top {
@@ -109,11 +110,6 @@ header {
     margin-top: 20em;
   }
 }
-@media (max-width: 742px) {
-  .produkt {
-    margin-top: 21em;
-  }
-}
 
 .produkt-img {
   margin-bottom: 3em;
@@ -128,6 +124,12 @@ header {
   height: 800px;
   filter: brightness(70%);
 }
+@media (max-width: 1042px) {
+  .produkt-img img {
+    width: 100%;
+    height: auto;
+  }
+}
 .produkt-img .img-text {
   position: absolute;
   top: 50%;
@@ -136,6 +138,11 @@ header {
   transform: translate(-50%, -50%);
   font-size: 2.5em;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 1042px) {
+  .produkt-img .img-text {
+    font-size: 4vw;
+  }
 }
 
 .jobb-container {
@@ -151,8 +158,16 @@ header {
 .jobb-container h1 {
   padding-bottom: 30px;
 }
+@media (max-width: 1042px) {
+  .jobb-container h1 {
+    font-size: 3.5vw;
+  }
+}
 .jobb-container .kontakt-form {
-  width: 65em;
+  width: 65%;
+}
+.jobb-container .kontakt-form label {
+  padding: 10px;
 }
 .jobb-container .kontakt-form .row {
   display: flex;
@@ -196,7 +211,10 @@ input[type=file] {
 
 .img-input {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
   gap: 5em;
 }
 .img-input label {
@@ -205,7 +223,7 @@ input[type=file] {
   align-items: center;
   cursor: pointer;
   border: 1px dotted gray;
-  width: 15em;
+  width: 10em;
   color: gray;
 }
 .img-input label i {

@@ -105,8 +105,8 @@ header {
   margin-top: 15em;
   margin-bottom: 7em;
   box-sizing: border-box;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -115,9 +115,10 @@ header {
     margin-top: 20em;
   }
 }
-@media (max-width: 742px) {
-  .toppsäljare {
-    margin-top: 21em;
+@media (max-width: 1042px) {
+  .toppsäljare img {
+    width: 100%;
+    height: auto;
   }
 }
 
