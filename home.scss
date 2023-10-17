@@ -20,6 +20,8 @@ header {
     top: 0;
     position: fixed;
     box-shadow: 0 1px 2px 0 rgba(0, 0.2, 0.1, 0.1), 0 1px 2px 0 rgba(0, 0.2, 0.2, 0.1);
+
+    
 }
 .header-top {
     
@@ -41,7 +43,8 @@ header {
     background-color: rgb(255, 255, 255);
     align-items: center;
     flex-wrap: wrap;
-    @media (max-width: 1168px) {
+
+    @media (max-width: 1453px) {
         justify-content: center;        
         padding: 0;    
     }
@@ -82,15 +85,12 @@ header {
                     
                 }
                 
-                @media (max-width: 1384px) {
+                @media (max-width: 1364px) {
                     padding: auto;
                     margin: auto;
                    
                 }
-                @media (max-width: 1024px) {
-                    font-size: 18px;
-                    
-                }
+                
                 @media (max-width: 480px) {
                     
                     padding: 3px;
@@ -104,7 +104,7 @@ header {
     }
 
     .search {
-        
+       margin: 15px;
         
         .search-form {
     
@@ -118,33 +118,24 @@ header {
                 .input-search {
 
                     border-radius: 100px;
-                    width: 20rem;
+                    width: 15rem;
                     height: 45px;
                     border: 1px solid #d0d0d0;
                     padding-left: 1em;
                     
-                    @media (max-width: 1810px) and (min-width: 1169px){
-                        width:fit-content;
-                    }
-                    @media (max-width: 1168px) {
-                        width: 20rem;
-                    }
+                    
+                   
                 }
         
                 .fa-magnifying-glass {
                     
                     position: absolute;
-                    left: 19em;
+                    left: 14em;
                     z-index: 1;
                     top: 15px;
                     transition: transform .20s;
-                    @media (max-width: 1810px) and (min-width: 1169px) {
-                        left: 9em;
-                    }
-
-                    @media (max-width: 1168px) {
-                        left: 19em;
-                    }
+                   
+                   
                    
                     &:hover {
                         transform: scale(1.2);
@@ -156,14 +147,22 @@ header {
     }
 }
 
-//toppsäljare//
+//toppsäljare @media//
 .toppsäljare {
     margin-top: 15em;
     margin-bottom: 7em;
     box-sizing: border-box;
     padding-left: 10%;
     padding-right: 10%;
-    object-fit: contain;
+    object-fit: cover;
+
+    @media (max-width: 1042px) {
+        margin-top: 20em;
+       
+    }
+    @media (max-width: 742px) {
+        margin-top: 21em;
+    }
 }
 
 
@@ -234,7 +233,6 @@ header {
 //footer @media//
 footer {
     background-color: rgb(247, 210, 238);
-   
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     
@@ -244,10 +242,6 @@ footer {
     justify-content: space-evenly;
     flex-direction: row;
 
-    @media (max-width: 1050px) {
-        
-        
-    }
     @media (max-width: 800px) {
         display: flex;
         flex-direction: column;
@@ -260,6 +254,7 @@ footer {
         display: flex;
         padding: 0px;
         font-size: 20px;
+
         @media (max-width: 800px) {
             display: flex;
             justify-content: center;
@@ -272,6 +267,7 @@ footer {
             padding-left: 0px;
              
             }
+
             li {
                 font-size: 16px;
                 margin-top: 5px;
@@ -283,16 +279,14 @@ footer {
                     &:hover {
                         text-decoration: underline;
                     }
-                    
-                    
                 }
             }
-            
         }
     
 
     .footer-kundservice {
         font-size: 20px;
+
         @media (max-width: 800px) {
             display: flex;
             justify-content: center;
@@ -315,8 +309,6 @@ footer {
                     &:hover {
                         text-decoration: underline;
                     }
-    
-                    
                 }
             }
             
@@ -326,13 +318,7 @@ footer {
     .footer-media {
         display: flex;
         flex-direction: column;   
-        
         align-items: center;
-
-        @media (max-width: 1050px) {
-            
-            
-        }
     
         @media (max-width: 800px) {
             display: flex;
@@ -341,7 +327,6 @@ footer {
             text-align: center;
         }
         .följ-oss {
-            
             font-size: 20px;
             margin-top: 3rem;
         }
@@ -364,84 +349,78 @@ footer {
     }
 }
 
-//footer-bottom kontakt//
+//footer-bottom-kontakt @media//
 
-.footer-kontakt-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    
-    
+.footer-kontakt {
+    margin-top: 3rem;
 
-    @media (max-width: 800px) {
+    &-container {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-    }
-    .contact {
-        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 15px;
-        padding-right: 1rem;
         gap: 1rem;
-        border-right: 1px solid black;
-
-        @media (max-width: 380px) {
+        
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .contact {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: row;
             flex-wrap: wrap;
-        }
-
-        @media (max-width: 800px) {
             border: 0px;
-        }
-        p {
-            display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
+            padding-right: 1rem;
+            gap: 1rem;
+            border-right: 1px solid black;
+    
+            @media (max-width: 800px) {
+                border: 0px;
+            }
 
-            a {
-                margin-bottom: 0px;
-                color: black;
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
-                    color: blue;
+            p {
+                margin: 0px;
+    
+                a {
+                    margin-bottom: 0px;
+                    color: black;
+                    text-decoration: none;
+    
+                    &:hover {
+                        text-decoration: underline;
+                        color: blue;
+                    }
                 }
             }
         }
-    }
-
-    .bottom-contact {
-        display: flex;
-        
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-        
-        span {
-            .far {
-                font-weight: 350;
-               
+    
+        .bottom-contact {
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 0px;
+    
+    
+            span {
+                .far {
+                    font-weight: 350;
+                   
+                }
             }
         }
     }
 }
 
-//media queries//
+
+
 
 
