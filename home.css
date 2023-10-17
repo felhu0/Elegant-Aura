@@ -43,6 +43,15 @@ header {
   align-items: center;
   transition: transform 0.2s;
 }
+.containders .navigation .menu li:hover {
+  opacity: 0.7;
+  color: white;
+  background-color: rgb(247, 210, 238);
+  transform: scale(1.2);
+}
+.containders .navigation .menu li:hover a {
+  color: white;
+}
 .containders .navigation .menu li a {
   text-decoration: none;
 }
@@ -50,12 +59,6 @@ header {
   .containders .navigation .menu li {
     font-size: 1.5vw;
   }
-}
-.containders .navigation .menu li:hover {
-  opacity: 0.7;
-  color: white;
-  background-color: rgb(247, 210, 238);
-  transform: scale(1.2);
 }
 .containders .search .search-form .input-container {
   position: relative;

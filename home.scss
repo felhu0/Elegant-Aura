@@ -57,26 +57,32 @@ header {
                 font-size: 18px;
                 padding: 10px;
                 margin: 10px;
-                
                 align-items: center;
                 transition: transform .20s;
 
+                &:hover {
+                        opacity: 0.7;
+                        color: white;
+                        background-color: rgb(247, 210, 238);
+                        transform: scale(1.2);
+
+                        a {
+                            color: white;
+                        }
+                }
+                 
                 a {
                     text-decoration: none;
                     
                 }
+               
 
                 @media (max-width: 1024px) {
                     font-size: 1.5vw;
                     
                 }
 
-                &:hover {
-                    opacity: 0.7;
-                    color: white;
-                    background-color: rgb(247, 210, 238);
-                    transform: scale(1.2);
-                }
+                
 
 
             }
