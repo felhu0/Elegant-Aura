@@ -8,7 +8,8 @@ body {
     display: block;
     //width: 100vw;
     margin: 0;
-    background-color: rgb(255, 255, 255);
+    padding: 0;
+    background-color: white;
 }
 
 
@@ -19,7 +20,7 @@ header {
     top: 0;
     position: fixed;
     box-shadow: 0 1px 2px 0 rgba(0, 0.2, 0.1, 0.1), 0 1px 2px 0 rgba(0, 0.2, 0.2, 0.1);
-
+    z-index: 1000;
     
 }
 .header-top {
@@ -149,21 +150,43 @@ header {
 //d & g container//
 .dg-container {
     box-sizing: border-box;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-top: 15em;
     margin-bottom: 10em;
-    gap: 10em;
+    gap: 5em; 
+    margin-top: 16em;
+    margin-bottom: 10em;
+
+    @media (max-width: 1042px) {
+        margin-top: 20em;
+       
+    }
+    @media (max-width: 742px) {
+        margin-top: 25em;
+    }
+    
 
         .dolce-gabbana {
-            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 500px;
             transition: 0.5s;
-
+            flex-basis: 20%;
             img {
-                height: 500px;
+                width: 350px;
+                height: 350px;
+
+                @media (max-width: 480px){
+                    width: 70vw;
+                    height: auto;
+                }
+
             }
 
             &:hover {
@@ -174,27 +197,43 @@ header {
         .dolce-gabbana-decription {
             display: flex;
             flex-direction: column;
-            width: 30%;
-            justify-content: end;
+            width: 500px;
+            justify-content: center;
             font-family: arial;
 
+            h1,
+            h2,
+            span,
+            h3
+             {
+                text-align: center;
+            }
+
             p {
+                margin-top: 2em;
                 font-size: 18px;
                 
             }
             
 
-            button {
-                
-                width: 70px;
-                background-color: $button-color;
-                color: $button-text-color;
-                border-radius: 15px;
-                height: 25px;
-
-                &:hover {
-                    opacity: 0.7;
+            span {
+                display: flex;
+                justify-content: center;
+                button {
+                    width: 70px;
+                    background-color: $button-color;
+                    color: $button-text-color;
+                    border-radius: 15px;
+                    height: 25px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    justify-items: center;
+                    &:hover {
+                        opacity: 0.7;
+                    }
                 }
+                
             }
         }
 }

@@ -2,13 +2,7 @@ $font-stack: sans-serif;
 $primary-color: rgb(216, 50, 50);
 $button-color: black;
 $button-text-color:white;
-$breakpoints: (
-"sm": 640px,
-"md": 768px,
-"lg": 1024px,
-"xl": 1280px,
-"2xl": 1536px,
-);
+
 
   
 body {
@@ -213,10 +207,16 @@ main {
         .skincare-img {
             width: 500px;
 
+            
             img {
                 width: 500px;
                 height: 500px;
                 border-radius: 20px;
+
+                @media (max-width: 524px){
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
 
@@ -240,6 +240,10 @@ main {
                 height: 500px;
                 border-radius: 20px;
                 
+                @media (max-width: 524px){
+                    width: 100%;
+                    height: auto;
+                }
             }
 
          }
@@ -288,11 +292,21 @@ main {
         .team-img {
             width: 500px;
 
+            @media (max-width: 524px) {
+                width: 100vw;
+                height: auto;
+            }
             img {
                 width: 500px;
                 height: 500px;
                 border-radius: 20px;
-                object-fit: cover
+                object-fit: cover;
+
+                @media (max-width: 524px) {
+                    width: 100%;
+                    height: auto;
+                }
+                
             }
         }
 

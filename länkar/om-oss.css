@@ -164,6 +164,12 @@ main {
   height: 500px;
   border-radius: 20px;
 }
+@media (max-width: 524px) {
+  .main-container .om-oss .skincare-img img {
+    width: 100%;
+    height: auto;
+  }
+}
 .main-container .vd {
   display: flex;
   flex-direction: row-reverse;
@@ -180,6 +186,12 @@ main {
   width: 500px;
   height: 500px;
   border-radius: 20px;
+}
+@media (max-width: 524px) {
+  .main-container .vd .profil-img img {
+    width: 100%;
+    height: auto;
+  }
 }
 .main-container .vd .vd-text {
   display: flex;
@@ -211,12 +223,24 @@ main {
 .main-container .team .team-img {
   width: 500px;
 }
+@media (max-width: 524px) {
+  .main-container .team .team-img {
+    width: 100vw;
+    height: auto;
+  }
+}
 .main-container .team .team-img img {
   width: 500px;
   height: 500px;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 524px) {
+  .main-container .team .team-img img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .kontakt-container {
