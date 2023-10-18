@@ -115,7 +115,7 @@ header {
   margin-bottom: 10em;
   gap: 5em;
   margin-top: 16em;
-  margin-bottom: 10em;
+  margin-bottom: 13em;
 }
 @media (max-width: 1042px) {
   .dg-container {
@@ -131,7 +131,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 500px;
+  width: 400px;
   transition: 0.5s;
   flex-basis: 20%;
 }
@@ -151,12 +151,11 @@ header {
 .dg-container .dolce-gabbana-decription {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 400px;
   justify-content: center;
   font-family: arial;
 }
 .dg-container .dolce-gabbana-decription h1,
-.dg-container .dolce-gabbana-decription h2,
 .dg-container .dolce-gabbana-decription span,
 .dg-container .dolce-gabbana-decription h3 {
   text-align: center;

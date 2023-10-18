@@ -160,7 +160,7 @@ header {
     margin-bottom: 10em;
     gap: 5em; 
     margin-top: 16em;
-    margin-bottom: 10em;
+    margin-bottom: 13em;
 
     @media (max-width: 1042px) {
         margin-top: 20em;
@@ -175,7 +175,7 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 500px;
+            width: 400px;
             transition: 0.5s;
             flex-basis: 20%;
             img {
@@ -197,12 +197,11 @@ header {
         .dolce-gabbana-decription {
             display: flex;
             flex-direction: column;
-            width: 500px;
+            width: 400px;
             justify-content: center;
             font-family: arial;
 
             h1,
-            h2,
             span,
             h3
              {
@@ -229,6 +228,7 @@ header {
                     flex-direction: row;
                     justify-content: center;
                     justify-items: center;
+
                     &:hover {
                         opacity: 0.7;
                     }
