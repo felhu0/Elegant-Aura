@@ -194,6 +194,9 @@ header {
         align-items: center;
         width: 250px;
         
+        @media (max-width: 480px) {
+            font-size: 5vw;
+        }
         
         img {
             
@@ -201,6 +204,9 @@ header {
             margin-bottom: 4em;
             transition: transform .20s;
             
+            @media (max-width: 480px) {
+                width: 100%;
+            }
             &:hover {
                 
                 transform: scale(1.2);
@@ -225,6 +231,9 @@ header {
             border-radius: 15px;
             height: 25px;
             
+            @media (max-width: 480px) {
+                width: 50vw;
+            }
             &:hover {
                 opacity: 0.7;
             }
@@ -266,7 +275,7 @@ footer {
 
         ul {
             list-style: none;
-            margin-top: 3rem;
+            margin-top: 0.5rem;
             padding-left: 0px;
              
             }
@@ -298,7 +307,7 @@ footer {
         
         ul {
             list-style: none;
-            margin-top: 3rem;
+            margin-top: 0.5rem;
             padding-left: 0px;
 
             li {
@@ -331,7 +340,7 @@ footer {
         }
         .följ-oss {
             font-size: 20px;
-            margin-top: 3rem;
+            margin-top: 0.5rem;
         }
         .media {
             display: flex;
@@ -356,7 +365,7 @@ footer {
 //footer-bottom-kontakt @media//
 
 .footer-kontakt {
-    margin-top: 3rem;
+    margin-top: 0.5rem;
 
     &-container {
         display: flex;

@@ -3,12 +3,11 @@ $primary-color: rgb(216, 50, 50);
 $button-color: black;
 $button-text-color:white;
 
-  
+ 
 body {
     display: block;
     //width: 100vw;
     margin: 0;
-    padding: 0;
     background-color: white;
 }
 
@@ -159,18 +158,22 @@ header {
     margin-top: 15em;
     margin-bottom: 10em;
     gap: 5em; 
-    margin-top: 16em;
-    margin-bottom: 13em;
+    margin-top: 17em;
+    margin-bottom: 15em;
 
     @media (max-width: 1042px) {
         margin-top: 20em;
-       
+    
     }
     @media (max-width: 742px) {
         margin-top: 25em;
     }
     
+    @media (max-width: 800px) {
+        margin-bottom: 30em;
+    }
 
+    
         .dolce-gabbana {
             display: flex;
             flex-direction: column;
@@ -181,9 +184,12 @@ header {
             img {
                 width: 350px;
                 height: 350px;
-
+                @media (max-width: 1186px) {
+                    width: 250px;
+                    height: auto;
+                }
                 @media (max-width: 480px){
-                    width: 70vw;
+                    width: 50vw;
                     height: auto;
                 }
 
@@ -201,6 +207,9 @@ header {
             justify-content: center;
             font-family: arial;
 
+            @media (max-width: 480px) {
+                font-size: 5vw;
+            }
             h1,
             span,
             h3
@@ -211,7 +220,10 @@ header {
             p {
                 margin-top: 2em;
                 font-size: 18px;
-                
+
+                @media (max-width: 480px) {
+                    font-size: 5vw;
+                }
             }
             
 
@@ -243,8 +255,9 @@ header {
 footer {
     background-color: rgb(247, 210, 238);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .footer-container {
     display: flex;
@@ -272,7 +285,7 @@ footer {
 
         ul {
             list-style: none;
-            margin-top: 3rem;
+            margin-top: 0.5rem;
             padding-left: 0px;
              
             }
@@ -304,7 +317,7 @@ footer {
         
         ul {
             list-style: none;
-            margin-top: 3rem;
+            margin-top: 0.5rem;
             padding-left: 0px;
 
             li {
@@ -332,12 +345,11 @@ footer {
         @media (max-width: 800px) {
             display: flex;
             justify-content: center;
-            
             text-align: center;
         }
         .följ-oss {
             font-size: 20px;
-            margin-top: 3rem;
+            margin-top: 0.5rem;
         }
         .media {
             display: flex;
@@ -361,7 +373,7 @@ footer {
 //footer-bottom-kontakt @media//
 
 .footer-kontakt {
-    margin-top: 3rem;
+    margin-top: 0.5rem;
 
     &-container {
         display: flex;
@@ -417,7 +429,7 @@ footer {
             flex-direction: row;
             flex-wrap: wrap;
             border: 0px;
-    
+            margin-bottom: 0px;
     
             span {
                 .far {

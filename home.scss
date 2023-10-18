@@ -148,6 +148,7 @@ header {
 }
 
 //toppsäljare @media//
+
 .toppsäljare {
     margin-top: 15em;
     margin-bottom: 7em;
@@ -155,7 +156,7 @@ header {
     padding-left: 15%;
     padding-right: 15%;
     object-fit: cover;
-
+    
     @media (max-width: 1042px) {
         margin-top: 20em;
 
@@ -168,7 +169,7 @@ header {
         }
     }
 
-}
+} 
 
 
 //main//
@@ -239,7 +240,7 @@ header {
 footer {
     background-color: rgb(247, 210, 238);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    
     
 }
 .footer-container {
@@ -268,7 +269,7 @@ footer {
 
         ul {
             list-style: none;
-            margin-top: 3rem;
+            margin-top: 0.5rem;
             padding-left: 0px;
              
             }
@@ -300,7 +301,7 @@ footer {
         
         ul {
             list-style: none;
-            margin-top: 3rem;
+            margin-top: 0.5rem;
             padding-left: 0px;
 
             li {
@@ -333,7 +334,7 @@ footer {
         }
         .följ-oss {
             font-size: 20px;
-            margin-top: 3rem;
+            margin-top: 0.5rem;
         }
         .media {
             display: flex;
@@ -357,7 +358,7 @@ footer {
 //footer-bottom-kontakt @media//
 
 .footer-kontakt {
-    margin-top: 3rem;
+    margin-top: 0.5rem;
 
     &-container {
         display: flex;

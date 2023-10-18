@@ -2,7 +2,6 @@
 body {
   display: block;
   margin: 0;
-  padding: 0;
   background-color: white;
 }
 
@@ -114,8 +113,8 @@ header {
   margin-top: 15em;
   margin-bottom: 10em;
   gap: 5em;
-  margin-top: 16em;
-  margin-bottom: 13em;
+  margin-top: 17em;
+  margin-bottom: 15em;
 }
 @media (max-width: 1042px) {
   .dg-container {
@@ -125,6 +124,11 @@ header {
 @media (max-width: 742px) {
   .dg-container {
     margin-top: 25em;
+  }
+}
+@media (max-width: 800px) {
+  .dg-container {
+    margin-bottom: 30em;
   }
 }
 .dg-container .dolce-gabbana {
@@ -139,9 +143,15 @@ header {
   width: 350px;
   height: 350px;
 }
+@media (max-width: 1186px) {
+  .dg-container .dolce-gabbana img {
+    width: 250px;
+    height: auto;
+  }
+}
 @media (max-width: 480px) {
   .dg-container .dolce-gabbana img {
-    width: 70vw;
+    width: 50vw;
     height: auto;
   }
 }
@@ -155,6 +165,11 @@ header {
   justify-content: center;
   font-family: arial;
 }
+@media (max-width: 480px) {
+  .dg-container .dolce-gabbana-decription {
+    font-size: 5vw;
+  }
+}
 .dg-container .dolce-gabbana-decription h1,
 .dg-container .dolce-gabbana-decription span,
 .dg-container .dolce-gabbana-decription h3 {
@@ -163,6 +178,11 @@ header {
 .dg-container .dolce-gabbana-decription p {
   margin-top: 2em;
   font-size: 18px;
+}
+@media (max-width: 480px) {
+  .dg-container .dolce-gabbana-decription p {
+    font-size: 5vw;
+  }
 }
 .dg-container .dolce-gabbana-decription span {
   display: flex;
@@ -186,6 +206,9 @@ header {
 footer {
   background-color: rgb(247, 210, 238);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-container {
@@ -215,7 +238,7 @@ footer {
 }
 .footer-container .footer-elegant-aura ul {
   list-style: none;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   padding-left: 0px;
 }
 .footer-container .footer-elegant-aura li {
@@ -241,7 +264,7 @@ footer {
 }
 .footer-container .footer-kundservice ul {
   list-style: none;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   padding-left: 0px;
 }
 .footer-container .footer-kundservice ul li {
@@ -269,7 +292,7 @@ footer {
 }
 .footer-container .footer-media .följ-oss {
   font-size: 20px;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
 }
 .footer-container .footer-media .media {
   display: flex;
@@ -285,7 +308,7 @@ footer {
 }
 
 .footer-kontakt {
-  margin-top: 3rem;
+  margin-top: 0.5rem;
 }
 .footer-kontakt-container {
   display: flex;
@@ -338,6 +361,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   border: 0px;
+  margin-bottom: 0px;
 }
 .footer-kontakt-container .bottom-contact span .far {
   font-weight: 350;
