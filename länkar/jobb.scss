@@ -1,7 +1,10 @@
-$font-stack: sans-serif;
-$primary-color: rgb(216, 50, 50);
+$font-header-footer: FreeMono, monospace;
+$font-title: sans-serif;
+$font-content: sans-serif;
+$border-color: rgb(227, 227, 227);
 $button-color: black;
 $button-text-color:white;
+$background-color-header-footer:rgb(247, 210, 238);
 
   
 body {
@@ -53,7 +56,7 @@ header {
         .menu {
             display: flex;
             list-style: none;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: $font-header-footer;
             color: rgb(3, 29, 29);
             align-items: center;
             padding-left: 0px;
@@ -184,7 +187,7 @@ header {
         transform: translate(-50%, -50%);
         
         font-size: 2.5em;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $font-content;
 
         @media (max-width: 1042px) {
             font-size: 4vw;
@@ -209,13 +212,14 @@ header {
     
     h1{
        padding-bottom: 30px;
+       font-family: $font-title;
 
        @media (max-width: 1042px) {
         font-size: 3.5vw;
     }
     }
     .kontakt-form {
-        
+        font-family: $font-content;
         width: 65%;
         label {
             padding: 10px;
@@ -304,7 +308,7 @@ input[type=file]{
 footer {
     background-color: rgb(247, 210, 238);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    font-family: $font-header-footer;
     
 }
 .footer-container {

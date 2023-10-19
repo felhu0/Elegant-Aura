@@ -126,11 +126,6 @@ header {
     margin-top: 25em;
   }
 }
-@media (max-width: 800px) {
-  .dg-container {
-    margin-bottom: 30em;
-  }
-}
 .dg-container .dolce-gabbana {
   display: flex;
   flex-direction: column;
@@ -176,6 +171,8 @@ header {
   text-align: center;
 }
 .dg-container .dolce-gabbana-decription p {
+  border-top: 1px solid rgb(216, 216, 216);
+  padding-top: 1em;
   margin-top: 2em;
   font-size: 18px;
 }
@@ -209,6 +206,12 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+@media (max-width: 800px) {
+  footer {
+    position: static;
+    bottom: auto;
+  }
 }
 
 .footer-container {
