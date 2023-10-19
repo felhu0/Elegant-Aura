@@ -63,6 +63,7 @@ header {
             align-items: center;
             padding-left: 0px;
             font-family: $font-header-footer;
+
             li {
                 font-size: 18px;
                 padding: 10px;
@@ -206,7 +207,6 @@ header {
         
         a {
             text-decoration: none;
-            
             font-size: 15px;
             color: white;
 
@@ -411,7 +411,6 @@ footer {
     
         .bottom-contact {
             display: flex;
-            
             justify-content: center;
             align-items: center;
             gap: 1rem;

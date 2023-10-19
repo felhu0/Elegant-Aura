@@ -231,6 +231,8 @@ header {
             span {
                 display: flex;
                 justify-content: center;
+                align-items: center;
+
                 button {
                     width: 70px;
                     background-color: $button-color;
@@ -240,8 +242,8 @@ header {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
-                    justify-items: center;
-
+                    align-items: center;
+                    
                     &:hover {
                         opacity: 0.7;
                     }
@@ -260,6 +262,7 @@ footer {
     bottom: 0;
     width: 100%;
     font-family: $font-header-footer;
+
     @media (max-width: 800px) {
         position: static;
         bottom: auto;
@@ -429,7 +432,6 @@ footer {
     
         .bottom-contact {
             display: flex;
-            
             justify-content: center;
             align-items: center;
             gap: 1rem;
