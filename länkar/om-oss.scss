@@ -358,13 +358,14 @@ main {
             }
            
         }
-        button {
+        input[type=submit] {
             padding: 10px 0; 
             outline: none;
             background-color: $button-color;
             color: $button-text-color;
             width: 100%;
             border-radius: 4px;
+            cursor:pointer;
 
             &:hover {
                 opacity: 0.7;

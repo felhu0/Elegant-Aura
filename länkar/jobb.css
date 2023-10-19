@@ -195,15 +195,16 @@ header {
   padding: 10px;
   box-sizing: border-box;
 }
-.jobb-container .kontakt-form button {
+.jobb-container .kontakt-form input[type=submit] {
   padding: 10px 0;
   outline: none;
   background-color: black;
   color: white;
   width: 100%;
   border-radius: 4px;
+  cursor: pointer;
 }
-.jobb-container .kontakt-form button:hover {
+.jobb-container .kontakt-form input[type=submit]:hover {
   opacity: 0.7;
 }
 

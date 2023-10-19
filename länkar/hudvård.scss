@@ -233,6 +233,7 @@ header {
             color: $button-text-color;
             border-radius: 15px;
             height: 25px;
+            cursor:pointer;
             
             @media (max-width: 480px) {
                 width: 50vw;
