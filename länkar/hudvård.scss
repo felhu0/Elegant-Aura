@@ -4,7 +4,7 @@ $font-content: sans-serif;
 $border-color: rgb(227, 227, 227);
 $button-color: black;
 $button-text-color:white;
-$background-color-header-footer:rgb(247, 210, 238);
+$background-color-header-footer:rgb(251, 154, 235);
 
 
   
@@ -31,7 +31,7 @@ header {
     
     width: 100%;
     height: 40px;
-    background-color: rgb(247, 210, 238);
+    background-color: $background-color-header-footer;
     margin-top: 0;
     padding-top: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -59,7 +59,7 @@ header {
         .menu {
             display: flex;
             list-style: none;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: $font-header-footer;
             color: rgb(3, 29, 29);
             align-items: center;
             padding-left: 0px;
@@ -76,7 +76,7 @@ header {
                 &:hover {
                         opacity: 0.7;
                         color: white;
-                        background-color: rgb(247, 210, 238);
+                        background-color: $background-color-header-footer;
                         transform: scale(1.2);
 
                         a {
@@ -124,7 +124,7 @@ header {
                     border-radius: 100px;
                     width: 15rem;
                     height: 45px;
-                    border: 1px solid #d0d0d0;
+                    border: 1px solid $border-color;
                     padding-left: 1em;
                     
                     
@@ -188,13 +188,12 @@ header {
     margin-bottom: 8em;
     justify-content: center;
     flex-wrap: wrap;
-
+    font-family: $font-content;
     .hudvård,
     .hårvård,
     .parfym {
         display: flex;
         flex-direction: column;
-        border: 1px solid rgb(255, 255, 255);
         align-items: center;
         width: 250px;
         
@@ -224,7 +223,7 @@ header {
 
         p,
         h3 {
-            font-family: $font-stack;
+            font-family: $font-content;
             text-align: center;
         }
 
@@ -248,9 +247,9 @@ header {
 
 //footer @media//
 footer {
-    background-color: rgb(247, 210, 238);
+    background-color: $background-color-header-footer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    font-family: $font-header-footer;
     
 }
 .footer-container {
