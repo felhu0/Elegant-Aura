@@ -82,7 +82,7 @@ header {
                  
                 a {
                     text-decoration: none;
-                    
+                    color: rgb(3, 29, 29);
                 }
                 
                 @media (max-width: 1364px) {
@@ -257,7 +257,7 @@ main {
              
              a {
                 text-decoration: none;
-                    color: black;
+                color: black;
 
                 &:hover {
                     text-decoration: underline;
@@ -358,6 +358,7 @@ main {
             }
            
         }
+
         input[type=submit] {
             padding: 10px 0; 
             outline: none;

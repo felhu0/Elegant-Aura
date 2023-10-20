@@ -63,6 +63,7 @@ header {
 }
 .containders .navigation .menu li a {
   text-decoration: none;
+  color: rgb(3, 29, 29);
 }
 @media (max-width: 1364px) {
   .containders .navigation .menu li {

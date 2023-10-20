@@ -83,7 +83,7 @@ header {
                  
                 a {
                     text-decoration: none;
-                    
+                    color: rgb(3, 29, 29);
                 }
                 
                 @media (max-width: 1364px) {
@@ -251,7 +251,7 @@ header {
                 box-sizing: border-box;
             }
         }
-        
+
         input[type=submit] {
             padding: 10px 0; 
             outline: none;
